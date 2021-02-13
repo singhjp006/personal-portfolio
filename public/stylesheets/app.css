@@ -1,8 +1,48 @@
-body {
+/* body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+} */
+
+@media (min-width: 992px) {
+  .navbar {
+      height:50px;
+  }
+
+  main {
+    margin-top: 50px;
+  }
+}
+
+#main-body-content {
+  margin-top: 100px;
+}
+
+/* projects page CSS */
+.projects-section1{
+  margin-top:-15%;
+  padding: 10%;
+}
+.projects-section1 h4{
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 30px;
+}
+.projects-section1 .subheading{
+  color: #3931af;
+  font-size: 20px;
+}
+.projects-section1 .row
+{
+  margin-top: 10%;
+}
+.how-img 
+{
+  text-align: center;
+}
+.how-img img{
+  width: 40%;
 }

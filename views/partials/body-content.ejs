@@ -1,0 +1,15 @@
+
+
+<% if(title == "Home") { %>
+    <div><%- include ../body-content-views/home-page.ejs %></div>
+<% } else { %>
+        <% if (title == "About Me") { %>
+            <%- include ../body-content-views/about-me.ejs %>
+        <%  } else if (title == "Projects") {  %>
+            <%- include ../body-content-views/projects.ejs %>
+        <%  } else if (title == "Services") {  %>
+            <%- include ../body-content-views/services.ejs %>
+        <%  } else {  %>
+            <%- include ../body-content-views/contact-me.ejs %>
+        <% } %>
+    <% } %>
