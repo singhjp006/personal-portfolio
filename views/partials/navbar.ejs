@@ -1,19 +1,31 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
         <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item active">
+            <% if (title == "Home") { %>
+                <li class="nav-item active">
+              <% } else { %>
+                <li class="nav-item">
+            <% } %>
                 <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item">
+            <% if (title == "About Me") { %>
+                <li class="nav-item active">
+              <% } else { %>
+                <li class="nav-item">
+            <% } %>
                 <a class="nav-link" href="/about">About Me</a>
             </li>
-            <li class="nav-item">
+            <% if (title == "Projects") { %>
+                <li class="nav-item active">
+              <% } else { %>
+                <li class="nav-item">
+            <% } %>
                 <a class="nav-link" href="/projects">Projects</a>
             </li>
         </ul>
     </div>
     <div class="mx-auto my-2 order-0 order-md-1 position-relative">
-        <a class="mx-auto" href="#">
+        <a class="mx-auto" href="/">
             <img src="/assets/images/jashanlogo.png" class="rounded-circle">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -22,10 +34,18 @@
     </div>
     <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
         <ul class="navbar-nav mr-auto text-center">
-            <li class="nav-item">
+            <% if (title == "Services") { %>
+                <li class="nav-item active">
+              <% } else { %>
+                <li class="nav-item">
+            <% } %>
                 <a class="nav-link" href="/services">Services</a>
             </li>
-            <li class="nav-item">
+            <% if (title == "Contact") { %>
+                <li class="nav-item active">
+              <% } else { %>
+                <li class="nav-item">
+            <% } %>
                 <a class="nav-link" href="/contact">Contact Me</a>
             </li>
             <li class="nav-item">
