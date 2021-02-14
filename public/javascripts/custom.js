@@ -1,3 +1,8 @@
+// File name: app.js
+// Created By: Jashan Preet Singh
+// Student ID: 301170664
+// Created On: 13 February, 2021
+
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
