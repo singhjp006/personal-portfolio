@@ -1,24 +1,22 @@
 <!-- 
-    File name: header.ejs
+    File name: error-header.ejs
     Created By: Jashan Preet Singh
     Created On: 13 February, 2021
 -->
 
-<!-- Common header to be included for all pages -->
+<!-- Header file specifically for error page -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title>Something went wrong!</title>
     
     <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
     <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
     <link rel='stylesheet' href='/stylesheets/app.css' />
+    <link rel='stylesheet' href='/stylesheets/error-page.css' />
 
-    <% if(title == "Services") { %>
-      <link rel='stylesheet' href='/stylesheets/services.css' />
-    <%}  %>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,800,900%7cRaleway:300,400,500,600,700" rel="stylesheet">
     
     <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/favicon_io/apple-touch-icon.png">
@@ -27,4 +25,3 @@
     <link rel="manifest" href="../../assets/images/favicon_io/site.webmanifest">
 
   </head>
-<body>

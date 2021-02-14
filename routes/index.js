@@ -1,10 +1,11 @@
+// File name: index.js
+// Created By: Jashan Preet Singh
+// Created On: 13 February, 2021
+
 var express = require('express');
 var router = express.Router();
 
-// /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Home', mainHeading: 'Jashan Preet Singh' });
-// });
+/* Express Routes */
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

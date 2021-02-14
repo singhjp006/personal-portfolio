@@ -1,0 +1,80 @@
+<!-- 
+    File name: error-page-body-content.ejs
+    Created By: Jashan Preet Singh
+    Created On: 13 February, 2021
+-->
+
+<!-- ejs file for error page body content -->
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+          <ul class="navbar-nav ml-auto text-center">
+                  <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+              </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="/about">About Me</a>
+              </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="/projects">Projects</a>
+              </li>
+          </ul>
+      </div>
+      <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+          <a class="mx-auto" href="/">
+              <img src="/assets/images/jashanlogo.png" class="rounded-circle">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+          <ul class="navbar-nav mr-auto text-center">
+                  <li class="nav-item">
+                  <a class="nav-link" href="/services">Services</a>
+              </li>
+                  <li class="nav-item active">
+                  <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://medium.com/@singhjp006" target="_blank">Blog</a>
+              </li>
+          </ul>
+      </div>
+      </nav>
+<div class="container-fluid">
+    <h1><%= message %></h1>
+</div>
+
+<div class="error-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="error-text">
+                    <h1 class="error">404 Error</h1>
+                    <div class="im-sheep">
+                        <div class="top">
+                            <div class="body"></div>
+                            <div class="head">
+                                <div class="im-eye one"></div>
+                                <div class="im-eye two"></div>
+                                <div class="im-ear one"></div>
+                                <div class="im-ear two"></div>
+                            </div>
+                        </div>
+                        <div class="im-legs">
+                            <div class="im-leg"></div>
+                            <div class="im-leg"></div>
+                            <div class="im-leg"></div>
+                            <div class="im-leg"></div>
+                        </div>
+                    </div>
+                    <h4>Oops! This page Could Not Be Found!</h4>
+                    <p>Sorry, the page you are looking for does not exist, have been removed or does not exist.</p>
+                    <a href="/" class="btn btn-primary btn-round">GO TO HOMEPAGE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
