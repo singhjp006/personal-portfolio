@@ -1,0 +1,38 @@
+<!-- 
+    File name: index.ejs
+    Created By: Jashan Preet Singh
+    Student ID: 301170664
+    Created On: 28 February, 2021
+-->
+
+<!-- Including files from different sources in order to keep index file neat and clean -->
+<%- include partials/header.ejs %>
+<%- include partials/navbar.ejs %>
+
+<!-- including dynamic body-content according to different pages -->
+<!-- <%- include partials/body-content.ejs %> -->
+
+<main class="container-fluid">
+    <div class="row">
+        <table class="table table-bordered table-striped table-hover">
+            <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Author</th>
+                <th class="text-center">Published</th>
+                <th class="text-center">Description</th>
+                <th class="text-center">Price</th>
+            </tr>
+            <% for(let count=0; count<BookList.length; count++) { %>
+                <tr>
+                    <th class="text-center"><%=BookList[count].name %></th>
+                    <th class="text-center"><%=BookList[count].author %></th>
+                    <th class="text-center"><%=BookList[count].published %></th>
+                    <th class="text-center"><%=BookList[count].description %></th>
+                    <th class="text-center"><%=BookList[count].price %></th>
+                </tr>
+            <%} %>
+        </table>
+    </div>
+</main>
+
+<%- include partials/footer.ejs %>
