@@ -1,3 +1,8 @@
+// File name: user.js
+// Created By: Jashan Preet Singh
+// Student ID: 301170664
+// Created On: 28 February, 2021
+
 // require modules for the User Model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');

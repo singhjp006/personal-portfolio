@@ -1,3 +1,8 @@
+// File name: contact.js
+// Created By: Jashan Preet Singh
+// Student ID: 301170664
+// Created On: 28 February, 2021
+
 let mongoose = require('mongoose');
 
 // create a model class
