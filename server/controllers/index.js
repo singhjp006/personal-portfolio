@@ -19,7 +19,7 @@ module.exports.displayHomePage = (req, res, next) => {
 
 /* GET about page. */
 module.exports.displayAboutPage = (req, res, next) => {
-  res.render('index', { title: 'About',
+  res.render('index', { title: 'About Me',
   displayName: req.user ? req.user.displayName : '' });
 };
 
